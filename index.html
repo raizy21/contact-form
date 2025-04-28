@@ -13,7 +13,7 @@
     </header>
 
     <main>
-      <form>
+      <form action="/submit" method="GET" id="contact-form">
         <section>
           <h2>how can i help you?</h2>
           <ul>
@@ -28,11 +28,23 @@
 
             <li>
               <label for="phone">phone</label>
-              <input type="tel" name="phone" id="phone" required />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                minlength="5"
+              />
             </li>
             <li>
               <label for="message">message</label>
-              <textarea name="message" id="message"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
             </li>
           </ul>
         </section>
@@ -52,7 +64,13 @@
 
           <ul>
             <li>
-              <input type="radio" name="replay" id="replay-text" value="text" />
+              <input
+                type="radio"
+                name="replay"
+                id="replay-text"
+                value="text"
+                required
+              />
               <label for="replay-text">text me</label>
             </li>
             <li>
@@ -61,6 +79,7 @@
                 name="replay"
                 id="replay-email"
                 value="email"
+                required
               />
               <label for="replay-email">email me</label>
             </li>
@@ -70,6 +89,7 @@
                 name="replay"
                 id="replay-phone"
                 value="phone"
+                required
               />
               <label for="replay-phone">call me</label>
             </li>
@@ -79,11 +99,18 @@
                 name="replay"
                 id="replay-whatsapp"
                 value="whatsapp"
+                required
               />
               <label for="replay-whatsapp">whatsapp me</label>
             </li>
             <li>
-              <input type="radio" name="replay" id="replay-none" value="none" />
+              <input
+                type="radio"
+                name="replay"
+                id="replay-none"
+                value="none"
+                required
+              />
               <label for="replay-none">do not replay</label>
             </li>
           </ul>
