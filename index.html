@@ -13,7 +13,40 @@
     </header>
 
     <main>
-      <form>the form</form>
+      <form>
+        <section>
+          <h2>how can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">name</label>
+              <input type="text" name="name" id="username" required />
+            </li>
+            <li>
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+
+            <li>
+              <label for="phone">phone</label>
+              <input type="tel" name="phone" id="phone" required />
+            </li>
+            <li>
+              <label for="message">message</label>
+              <textarea name="message" id="message"></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="source">how do you find me?</label>
+          <select name="source" id="source" required>
+            <option value="search">search engine</option>
+            <option value="social">social media</option>
+            <option value="friend">friend</option>
+            <option value="other">other</option>
+          </select>
+        </section>
+      </form>
     </main>
   </body>
 </html>
