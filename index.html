@@ -15,7 +15,7 @@
     <main>
       <form>
         <section>
-          <h2>how can we help you?</h2>
+          <h2>how can i help you?</h2>
           <ul>
             <li>
               <label for="username">name</label>
@@ -45,6 +45,63 @@
             <option value="friend">friend</option>
             <option value="other">other</option>
           </select>
+        </section>
+
+        <section>
+          <h2>how should i replay?</h2>
+
+          <ul>
+            <li>
+              <input type="radio" name="replay" id="replay-text" value="text" />
+              <label for="replay-text">text me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="replay"
+                id="replay-email"
+                value="email"
+              />
+              <label for="replay-email">email me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="replay"
+                id="replay-phone"
+                value="phone"
+              />
+              <label for="replay-phone">call me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="replay"
+                id="replay-whatsapp"
+                value="whatsapp"
+              />
+              <label for="replay-whatsapp">whatsapp me</label>
+            </li>
+            <li>
+              <input type="radio" name="replay" id="replay-none" value="none" />
+              <label for="replay-none">do not replay</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <input
+            type="checkbox"
+            name="accept-terms"
+            id="accept-terms"
+            required
+          />
+          <label>accept terms</label>
+        </section>
+
+        <section>
+          <button type="reset">reset</button>
+          <button type="submit">submit</button>
         </section>
       </form>
     </main>
