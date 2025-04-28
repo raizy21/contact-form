@@ -44,6 +44,7 @@
                 required
                 minlength="10"
                 maxlength="200"
+                rows="5"
               ></textarea>
             </li>
           </ul>
@@ -63,7 +64,7 @@
           <h2>how should i replay?</h2>
 
           <ul>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 name="replay"
@@ -73,7 +74,7 @@
               />
               <label for="replay-text">text me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 name="replay"
@@ -83,7 +84,7 @@
               />
               <label for="replay-email">email me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 name="replay"
@@ -93,7 +94,7 @@
               />
               <label for="replay-phone">call me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 name="replay"
@@ -103,7 +104,7 @@
               />
               <label for="replay-whatsapp">whatsapp me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 name="replay"
@@ -116,7 +117,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="inline-control">
           <input
             type="checkbox"
             name="accept-terms"
@@ -126,9 +127,9 @@
           <label>accept terms</label>
         </section>
 
-        <section>
-          <button type="reset">reset</button>
-          <button type="submit">submit</button>
+        <section id="btn-form">
+          <button type="reset" class="btn-empty">reset</button>
+          <button type="submit" class="btn-filled">submit</button>
         </section>
       </form>
     </main>
